@@ -1,0 +1,42 @@
+Merge Sort Adımları (Dizi: [16, 21, 11, 8, 12, 22])
+Merge Sort, bir diziyi sürekli olarak ikiye bölerek en küçük parçalara ayırır ve sonra bu parçaları sıralı bir şekilde birleştirir. Adımlar şu şekildedir:
+
+Diziyi ikiye böl:
+
+Sol: [16, 21, 11]
+Sağ: [8, 12, 22]
+Sol parçayı ikiye böl:
+
+Sol: [16]
+Sağ: [21, 11]
+[21, 11] parçasını ikiye böl:
+
+Sol: [21]
+Sağ: [11]
+[21] ve [11] birleştir:
+
+Sıralı hali: [11, 21]
+[16] ve [11, 21] birleştir:
+
+Sıralı hali: [11, 16, 21]
+Sağ parçayı ikiye böl:
+
+Sol: [8]
+Sağ: [12, 22]
+[12, 22] parçasını ikiye böl:
+
+Sol: [12]
+Sağ: [22]
+[12] ve [22] birleştir:
+
+Sıralı hali: [12, 22]
+[8] ve [12, 22] birleştir:
+
+Sıralı hali: [8, 12, 22]
+İki ana parçayı birleştir:
+
+Sıralı hali: [8, 11, 12, 16, 21, 22]
+Big-O Gösterimi:
+Merge Sort’un zaman karmaşıklığı her durumda 
+O(nlogn)
+O(nlogn)'dir. Hem en iyi, hem ortalama, hem de en kötü durumda bu zaman karmaşıklığı geçerlidir çünkü diziyi ikiye böler ve her bir eleman için birleştirme yapar.
